@@ -16,7 +16,7 @@ from pathlib import Path
 # Librerías para OCR y procesamiento de PDF
 try:
     import pytesseract
-    from PIL import Image
+    from PIL import Image, ImageEnhance, ImageFilter
     import pdf2image
     from PyPDF2 import PdfReader
     import fitz  # PyMuPDF
@@ -137,6 +137,60 @@ class ConvenioExtractor:
             'interventora': 'Director/a'
         }
 
+    def clean_text_for_csv(self, text: str) -> str:
+        """Limpia texto para CSV: reemplaza saltos de línea y caracteres problemáticos"""
+        if not text:
+            return ""
+        
+        # Reemplazar saltos de línea por espacios
+        text = re.sub(r'\r\n|\r|\n', ' ', text)
+        
+        # Reemplazar múltiples espacios por uno solo
+        text = re.sub(r'\s+', ' ', text)
+        
+        # Eliminar comillas dobles problemáticas
+        text = text.replace('"', "'")
+        
+        # Eliminar caracteres de control
+        text = re.sub(r'[\x00-\x1f\x7f-\x9f]', ' ', text)
+        
+        # Limpiar espacios al inicio y final
+        text = text.strip()
+        
+        return text
+
+    def enhance_image_for_ocr(self, image: Image.Image) -> Image.Image:
+        """Mejora la calidad de la imagen para OCR"""
+        try:
+            # Convertir a escala de grises si no lo está
+            if image.mode != 'L':
+                image = image.convert('L')
+            
+            # Aumentar contraste
+            enhancer = ImageEnhance.Contrast(image)
+            image = enhancer.enhance(2.0)
+            
+            # Aumentar nitidez
+            enhancer = ImageEnhance.Sharpness(image)
+            image = enhancer.enhance(1.5)
+            
+            # Aplicar filtro para reducir ruido
+            image = image.filter(ImageFilter.MedianFilter(size=3))
+            
+            # Binarización (convertir a blanco y negro puro)
+            # Usar threshold adaptativo
+            import numpy as np
+            img_array = np.array(image)
+            threshold = np.mean(img_array) * 0.9  # Umbral dinámico
+            img_array = np.where(img_array > threshold, 255, 0)
+            image = Image.fromarray(img_array.astype(np.uint8))
+            
+            return image
+            
+        except Exception as e:
+            logger.warning(f"Error mejorando imagen: {e}")
+            return image
+
     def download_file(self, url: str, filename: str) -> bool:
         """Descarga un archivo desde URL (PDF o HTML)"""
         try:
@@ -166,6 +220,7 @@ class ConvenioExtractor:
             return self.extract_text_from_html(file_path)
         else:
             return self.extract_text_from_pdf(file_path)
+    
     def extract_text_from_html(self, html_path: str) -> str:
         """Extrae texto de archivo HTML"""
         try:
@@ -189,7 +244,7 @@ class ConvenioExtractor:
                 chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
                 text = '\n'.join(chunk for chunk in chunks if chunk)
                 
-                return text
+                return self.clean_text_for_csv(text)
             
             except ImportError:
                 logger.warning("BeautifulSoup no disponible, usando extracción simple")
@@ -197,7 +252,7 @@ class ConvenioExtractor:
                 import re
                 text = re.sub(r'<[^>]+>', '', content)
                 text = re.sub(r'\s+', ' ', text)
-                return text.strip()
+                return self.clean_text_for_csv(text.strip())
             
         except Exception as e:
             logger.error(f"Error extrayendo texto de HTML: {e}")
@@ -217,31 +272,48 @@ class ConvenioExtractor:
         except Exception as e:
             logger.warning(f"Error extrayendo texto directo: {e}")
         
-        # Método 2: Si no hay texto o es muy poco, usar OCR
+        # Método 2: Si no hay texto o es muy poco, usar OCR mejorado
         if len(text.strip()) < 100:
-            logger.info("Usando OCR para extraer texto")
-            text = self.ocr_pdf(pdf_path)
+            logger.info("Usando OCR mejorado para extraer texto")
+            text = self.ocr_pdf_enhanced(pdf_path)
         
-        return text
+        return self.clean_text_for_csv(text)
 
-    def ocr_pdf(self, pdf_path: str) -> str:
-        """Extrae texto usando OCR (Tesseract)"""
+    def ocr_pdf_enhanced(self, pdf_path: str) -> str:
+        """Extrae texto usando OCR mejorado (Tesseract)"""
         try:
-            # Convertir PDF a imágenes
-            images = pdf2image.convert_from_path(pdf_path, dpi=300)
+            # Convertir PDF a imágenes con mayor DPI para mejor calidad
+            images = pdf2image.convert_from_path(
+                pdf_path, 
+                dpi=400,  # Aumentado de 300 a 400
+                fmt='PNG'  # PNG para mejor calidad
+            )
             
             text = ""
+            
+            # Configuración mejorada de Tesseract
+            custom_config = r'--oem 3 --psm 6 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÉÍÓÚáéíóúÑñ0123456789.,;:()[]{}/-_°º\'"" '
+            
             for i, image in enumerate(images):
-                # OCR en cada página
-                page_text = pytesseract.image_to_string(image, lang='spa')
-                text += f"\n--- PÁGINA {i+1} ---\n{page_text}\n"
+                # Mejorar imagen antes del OCR
+                enhanced_image = self.enhance_image_for_ocr(image)
                 
-                if i >= 10:  # Limitar a 10 páginas para evitar procesos muy largos
+                # OCR en cada página con configuración personalizada
+                page_text = pytesseract.image_to_string(
+                    enhanced_image, 
+                    lang='spa',
+                    config=custom_config
+                )
+                
+                if page_text.strip():
+                    text += f" {page_text} "
+                
+                if i >= 15:  # Limitar a 15 páginas para evitar procesos muy largos
                     break
             
             return text
         except Exception as e:
-            logger.error(f"Error en OCR: {e}")
+            logger.error(f"Error en OCR mejorado: {e}")
             return ""
 
     def extract_resolution_data(self, text: str, url: str) -> Dict:
@@ -322,7 +394,7 @@ class ConvenioExtractor:
         # Extraer título (primera línea que parece título)
         title_match = re.search(r'convenio\s+(.+?)(?:\n|\.)', text, re.IGNORECASE)
         if title_match:
-            data['titulo'] = title_match.group(1).strip()[:255]
+            data['titulo'] = self.clean_text_for_csv(title_match.group(1).strip()[:255])
         
         # Buscar duración
         duracion_patterns = [
@@ -382,7 +454,7 @@ class ConvenioExtractor:
         for pattern in objeto_patterns:
             match = re.search(pattern, text, re.IGNORECASE | re.DOTALL)
             if match:
-                data['objeto'] = match.group(1).strip()[:500]
+                data['objeto'] = self.clean_text_for_csv(match.group(1).strip()[:500])
                 break
         
         return data
@@ -409,7 +481,7 @@ class ConvenioExtractor:
         for pattern in institution_patterns:
             matches = re.finditer(pattern, text, re.IGNORECASE)
             for match in matches:
-                inst_name = match.group(1).strip()
+                inst_name = self.clean_text_for_csv(match.group(1).strip())
                 if len(inst_name) > 5 and inst_name.lower() not in found_institutions:
                     found_institutions.add(inst_name.lower())
                     
@@ -424,7 +496,7 @@ class ConvenioExtractor:
                         'nombre': inst_name,
                         'tipo': inst_type,
                         'pais': 'Argentina',
-                        'provincia': 'Salta',  # Asumir Salta por defecto
+                        'provincia': 'Salta',
                         'localidad': 'Salta'
                     })
         
@@ -447,8 +519,8 @@ class ConvenioExtractor:
         for pattern in name_patterns:
             matches = re.finditer(pattern, text)
             for match in matches:
-                nombre = match.group(1)
-                apellido = match.group(2)
+                nombre = self.clean_text_for_csv(match.group(1))
+                apellido = self.clean_text_for_csv(match.group(2))
                 full_name = f"{nombre} {apellido}".lower()
                 
                 if full_name not in found_names and len(nombre) > 2 and len(apellido) > 2:
@@ -478,7 +550,7 @@ class ConvenioExtractor:
         pdf_path = self.output_dir / filename
         
         # Descargar PDF
-        if not self.download_pdf(url, filename):
+        if not self.download_file(url, filename):
             return None
         
         try:
@@ -495,7 +567,7 @@ class ConvenioExtractor:
             institutions = self.extract_institutions(text)
             signers = self.extract_signers(text)
             
-            # Formatear para CSV
+            # Formatear para CSV con textos limpios
             csv_row = {
                 'resolucion': '|'.join([
                     resolution_data['numero'],
@@ -553,8 +625,15 @@ class ConvenioExtractor:
             processed = 0
             errors = 0
             
+            # Usar quoting=csv.QUOTE_ALL para evitar problemas con caracteres especiales
             with open(output_path, 'w', newline='', encoding='utf-8') as csvfile:
-                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                writer = csv.DictWriter(
+                    csvfile, 
+                    fieldnames=fieldnames,
+                    quoting=csv.QUOTE_ALL,  # Siempre usar comillas
+                    escapechar='\\',        # Carácter de escape
+                    lineterminator='\n'     # Terminador de línea explícito
+                )
                 writer.writeheader()
                 
                 for i, url in enumerate(urls, 1):
@@ -567,17 +646,10 @@ class ConvenioExtractor:
                         logger.info(f"✓ Procesado exitosamente")
                     else:
                         errors += 1
-                        logger.error(f"✗ Error procesando")
-                    
-                    # Pausa entre descargas
-                    if i % 10 == 0:
-                        logger.info(f"Pausa técnica... Procesados: {processed}, Errores: {errors}")
-            
-            logger.info(f"Proceso completado: {processed} exitosos, {errors} errores")
-            logger.info(f"CSV generado: {output_path}")
-            
+                        logger.error(f"✗ Error procesando {url}")
+            logger.info(f"Proceso completado: {processed} procesados, {errors} errores")
         except Exception as e:
-            logger.error(f"Error general: {e}")
+            logger.error(f"Error en process_urls_file: {e}")
 
 def main():
     """Función principal"""

@@ -1,0 +1,663 @@
+2025-09-01 18:08:38,526 - INFO - Procesando 13 URLs
+2025-09-01 18:08:38,527 - INFO - Procesando 1/13: http://bo.unsa.edu.ar/dr/R1973/R-DR-1973-0886.pdf
+2025-09-01 18:08:39,424 - INFO - Descargado: R-DR-1973-0886.pdf
+2025-09-01 18:08:39,441 - INFO - Usando OCR para extraer texto
+2025-09-01 18:08:56,967 - INFO - Procesando 2/13: http://bo.unsa.edu.ar/dr/R1973/R-DR-1973-0966.pdf
+2025-09-01 18:08:57,760 - INFO - Descargado: R-DR-1973-0966.pdf
+2025-09-01 18:08:57,777 - INFO - Usando OCR para extraer texto
+2025-09-01 18:09:16,804 - INFO - Procesando 3/13: http://bo.unsa.edu.ar/dr/R1974/R-DR-1974-0366.pdf
+2025-09-01 18:09:20,062 - INFO - Descargado: R-DR-1974-0366.pdf
+2025-09-01 18:09:20,090 - INFO - Usando OCR para extraer texto
+2025-09-01 18:09:58,865 - INFO - Procesando 4/13: http://bo.unsa.edu.ar/dr/R2008/R-DR-2008-0016.html
+2025-09-01 18:09:59,348 - INFO - Descargado: R-DR-2008-0016.html
+2025-09-01 18:09:59,381 - WARNING - Error extrayendo texto directo: EOF marker not found
+2025-09-01 18:09:59,381 - INFO - Usando OCR para extraer texto
+2025-09-01 18:09:59,428 - ERROR - Error en OCR: Unable to get page count.
+Syntax Warning: May not be a PDF file (continuing anyway)
+Syntax Error (2): Illegal character <21> in hex string
+Syntax Error (4): Illegal character <4f> in hex string
+Syntax Error (6): Illegal character <54> in hex string
+Syntax Error (7): Illegal character <59> in hex string
+Syntax Error (8): Illegal character <50> in hex string
+Syntax Error (11): Illegal character <48> in hex string
+Syntax Error (12): Illegal character <54> in hex string
+Syntax Error (13): Illegal character <4d> in hex string
+Syntax Error (14): Illegal character <4c> in hex string
+Syntax Error (16): Illegal character <50> in hex string
+Syntax Error (17): Illegal character <55> in hex string
+Syntax Error (19): Illegal character <4c> in hex string
+Syntax Error (20): Illegal character <49> in hex string
+Syntax Error (23): Illegal character <22> in hex string
+Syntax Error (24): Illegal character <2d> in hex string
+Syntax Error (25): Illegal character <2f> in hex string
+Syntax Error (26): Illegal character <2f> in hex string
+Syntax Error (27): Illegal character <57> in hex string
+Syntax Error (30): Illegal character <2f> in hex string
+Syntax Error (31): Illegal character <2f> in hex string
+Syntax Error (33): Illegal character <54> in hex string
+Syntax Error (36): Illegal character <48> in hex string
+Syntax Error (37): Illegal character <54> in hex string
+Syntax Error (38): Illegal character <4d> in hex string
+Syntax Error (39): Illegal character <4c> in hex string
+Syntax Error (42): Illegal character <2e> in hex string
+Syntax Error (45): Illegal character <54> in hex string
+Syntax Error (46): Illegal character <72> in hex string
+Syntax Error (48): Illegal character <6e> in hex string
+Syntax Error (49): Illegal character <73> in hex string
+Syntax Error (50): Illegal character <69> in hex string
+Syntax Error (51): Illegal character <74> in hex string
+Syntax Error (52): Illegal character <69> in hex string
+Syntax Error (53): Illegal character <6f> in hex string
+Syntax Error (54): Illegal character <6e> in hex string
+Syntax Error (56): Illegal character <6c> in hex string
+Syntax Error (57): Illegal character <2f> in hex string
+Syntax Error (58): Illegal character <2f> in hex string
+Syntax Error (60): Illegal character <4e> in hex string
+Syntax Error (61): Illegal character <22> in hex string
+Syntax Error (67): Illegal character <48> in hex string
+Syntax Error (68): Illegal character <54> in hex string
+Syntax Error (69): Illegal character <4d> in hex string
+Syntax Error (70): Illegal character <4c> in hex string
+Syntax Error (76): Illegal character <48> in hex string
+Syntax Error (86): Illegal character <4d> in hex string
+Syntax Error (88): Illegal character <54> in hex string
+Syntax Error (91): Illegal character <48> in hex string
+Syntax Error (92): Illegal character <54> in hex string
+Syntax Error (93): Illegal character <54> in hex string
+Syntax Error (94): Illegal character <50> in hex string
+Syntax Error (95): Illegal character <2d> in hex string
+Syntax Error (97): Illegal character <51> in hex string
+Syntax Error (98): Illegal character <55> in hex string
+Syntax Error (99): Illegal character <49> in hex string
+Syntax Error (100): Illegal character <56> in hex string
+Syntax Error (101): Illegal character <3d> in hex string
+Syntax Error (102): Illegal character <22> in hex string
+Syntax Error (104): Illegal character <4f> in hex string
+Syntax Error (105): Illegal character <4e> in hex string
+Syntax Error (106): Illegal character <54> in hex string
+Syntax Error (108): Illegal character <4e> in hex string
+Syntax Error (109): Illegal character <54> in hex string
+Syntax Error (110): Illegal character <2d> in hex string
+Syntax Error (111): Illegal character <54> in hex string
+Syntax Error (112): Illegal character <59> in hex string
+Syntax Error (113): Illegal character <50> in hex string
+Syntax Error (115): Illegal character <22> in hex string
+Syntax Error (118): Illegal character <4f> in hex string
+Syntax Error (119): Illegal character <4e> in hex string
+Syntax Error (120): Illegal character <54> in hex string
+Syntax Error (122): Illegal character <4e> in hex string
+Syntax Error (123): Illegal character <54> in hex string
+Syntax Error (124): Illegal character <3d> in hex string
+Syntax Error (125): Illegal character <22> in hex string
+Syntax Error (126): Illegal character <74> in hex string
+Syntax Error (128): Illegal character <78> in hex string
+Syntax Error (129): Illegal character <74> in hex string
+Syntax Error (130): Illegal character <2f> in hex string
+Syntax Error (131): Illegal character <68> in hex string
+Syntax Error (132): Illegal character <74> in hex string
+Syntax Error (133): Illegal character <6d> in hex string
+Syntax Error (134): Illegal character <6c> in hex string
+Syntax Error (135): Illegal character <3b> in hex string
+Syntax Error (138): Illegal character <68> in hex string
+Syntax Error (140): Illegal character <72> in hex string
+Syntax Error (141): Illegal character <73> in hex string
+Syntax Error (143): Illegal character <74> in hex string
+Syntax Error (144): Illegal character <3d> in hex string
+Syntax Error (145): Illegal character <77> in hex string
+Syntax Error (146): Illegal character <69> in hex string
+Syntax Error (147): Illegal character <6e> in hex string
+Syntax Error (149): Illegal character <6f> in hex string
+Syntax Error (150): Illegal character <77> in hex string
+Syntax Error (151): Illegal character <73> in hex string
+Syntax Error (152): Illegal character <2d> in hex string
+Syntax Error (157): Illegal character <22> in hex string
+Syntax Error (164): Illegal character <54> in hex string
+Syntax Error (165): Illegal character <49> in hex string
+Syntax Error (166): Illegal character <54> in hex string
+Syntax Error (167): Illegal character <4c> in hex string
+Syntax Error (171): Illegal character <2f> in hex string
+Syntax Error (172): Illegal character <54> in hex string
+Syntax Error (173): Illegal character <49> in hex string
+Syntax Error (174): Illegal character <54> in hex string
+Syntax Error (175): Illegal character <4c> in hex string
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't read xref table
+
+2025-09-01 18:09:59,431 - WARNING - Texto insuficiente en R-DR-2008-0016.html
+2025-09-01 18:09:59,446 - INFO - Procesando 5/13: http://bo.unsa.edu.ar/dr/R2008/R-DR-2008-0057.html
+2025-09-01 18:09:59,834 - INFO - Descargado: R-DR-2008-0057.html
+2025-09-01 18:09:59,869 - WARNING - Error extrayendo texto directo: EOF marker not found
+2025-09-01 18:09:59,869 - INFO - Usando OCR para extraer texto
+2025-09-01 18:09:59,916 - ERROR - Error en OCR: Unable to get page count.
+Syntax Warning: May not be a PDF file (continuing anyway)
+Syntax Error (2): Illegal character <21> in hex string
+Syntax Error (4): Illegal character <4f> in hex string
+Syntax Error (6): Illegal character <54> in hex string
+Syntax Error (7): Illegal character <59> in hex string
+Syntax Error (8): Illegal character <50> in hex string
+Syntax Error (11): Illegal character <48> in hex string
+Syntax Error (12): Illegal character <54> in hex string
+Syntax Error (13): Illegal character <4d> in hex string
+Syntax Error (14): Illegal character <4c> in hex string
+Syntax Error (16): Illegal character <50> in hex string
+Syntax Error (17): Illegal character <55> in hex string
+Syntax Error (19): Illegal character <4c> in hex string
+Syntax Error (20): Illegal character <49> in hex string
+Syntax Error (23): Illegal character <22> in hex string
+Syntax Error (24): Illegal character <2d> in hex string
+Syntax Error (25): Illegal character <2f> in hex string
+Syntax Error (26): Illegal character <2f> in hex string
+Syntax Error (27): Illegal character <57> in hex string
+Syntax Error (30): Illegal character <2f> in hex string
+Syntax Error (31): Illegal character <2f> in hex string
+Syntax Error (33): Illegal character <54> in hex string
+Syntax Error (36): Illegal character <48> in hex string
+Syntax Error (37): Illegal character <54> in hex string
+Syntax Error (38): Illegal character <4d> in hex string
+Syntax Error (39): Illegal character <4c> in hex string
+Syntax Error (42): Illegal character <2e> in hex string
+Syntax Error (45): Illegal character <54> in hex string
+Syntax Error (46): Illegal character <72> in hex string
+Syntax Error (48): Illegal character <6e> in hex string
+Syntax Error (49): Illegal character <73> in hex string
+Syntax Error (50): Illegal character <69> in hex string
+Syntax Error (51): Illegal character <74> in hex string
+Syntax Error (52): Illegal character <69> in hex string
+Syntax Error (53): Illegal character <6f> in hex string
+Syntax Error (54): Illegal character <6e> in hex string
+Syntax Error (56): Illegal character <6c> in hex string
+Syntax Error (57): Illegal character <2f> in hex string
+Syntax Error (58): Illegal character <2f> in hex string
+Syntax Error (60): Illegal character <4e> in hex string
+Syntax Error (61): Illegal character <22> in hex string
+Syntax Error (67): Illegal character <48> in hex string
+Syntax Error (68): Illegal character <54> in hex string
+Syntax Error (69): Illegal character <4d> in hex string
+Syntax Error (70): Illegal character <4c> in hex string
+Syntax Error (76): Illegal character <48> in hex string
+Syntax Error (86): Illegal character <4d> in hex string
+Syntax Error (88): Illegal character <54> in hex string
+Syntax Error (91): Illegal character <48> in hex string
+Syntax Error (92): Illegal character <54> in hex string
+Syntax Error (93): Illegal character <54> in hex string
+Syntax Error (94): Illegal character <50> in hex string
+Syntax Error (95): Illegal character <2d> in hex string
+Syntax Error (97): Illegal character <51> in hex string
+Syntax Error (98): Illegal character <55> in hex string
+Syntax Error (99): Illegal character <49> in hex string
+Syntax Error (100): Illegal character <56> in hex string
+Syntax Error (101): Illegal character <3d> in hex string
+Syntax Error (102): Illegal character <22> in hex string
+Syntax Error (104): Illegal character <4f> in hex string
+Syntax Error (105): Illegal character <4e> in hex string
+Syntax Error (106): Illegal character <54> in hex string
+Syntax Error (108): Illegal character <4e> in hex string
+Syntax Error (109): Illegal character <54> in hex string
+Syntax Error (110): Illegal character <2d> in hex string
+Syntax Error (111): Illegal character <54> in hex string
+Syntax Error (112): Illegal character <59> in hex string
+Syntax Error (113): Illegal character <50> in hex string
+Syntax Error (115): Illegal character <22> in hex string
+Syntax Error (118): Illegal character <4f> in hex string
+Syntax Error (119): Illegal character <4e> in hex string
+Syntax Error (120): Illegal character <54> in hex string
+Syntax Error (122): Illegal character <4e> in hex string
+Syntax Error (123): Illegal character <54> in hex string
+Syntax Error (124): Illegal character <3d> in hex string
+Syntax Error (125): Illegal character <22> in hex string
+Syntax Error (126): Illegal character <74> in hex string
+Syntax Error (128): Illegal character <78> in hex string
+Syntax Error (129): Illegal character <74> in hex string
+Syntax Error (130): Illegal character <2f> in hex string
+Syntax Error (131): Illegal character <68> in hex string
+Syntax Error (132): Illegal character <74> in hex string
+Syntax Error (133): Illegal character <6d> in hex string
+Syntax Error (134): Illegal character <6c> in hex string
+Syntax Error (135): Illegal character <3b> in hex string
+Syntax Error (138): Illegal character <68> in hex string
+Syntax Error (140): Illegal character <72> in hex string
+Syntax Error (141): Illegal character <73> in hex string
+Syntax Error (143): Illegal character <74> in hex string
+Syntax Error (144): Illegal character <3d> in hex string
+Syntax Error (145): Illegal character <77> in hex string
+Syntax Error (146): Illegal character <69> in hex string
+Syntax Error (147): Illegal character <6e> in hex string
+Syntax Error (149): Illegal character <6f> in hex string
+Syntax Error (150): Illegal character <77> in hex string
+Syntax Error (151): Illegal character <73> in hex string
+Syntax Error (152): Illegal character <2d> in hex string
+Syntax Error (157): Illegal character <22> in hex string
+Syntax Error (164): Illegal character <54> in hex string
+Syntax Error (165): Illegal character <49> in hex string
+Syntax Error (166): Illegal character <54> in hex string
+Syntax Error (167): Illegal character <4c> in hex string
+Syntax Error (171): Illegal character <2f> in hex string
+Syntax Error (172): Illegal character <54> in hex string
+Syntax Error (173): Illegal character <49> in hex string
+Syntax Error (174): Illegal character <54> in hex string
+Syntax Error (175): Illegal character <4c> in hex string
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't read xref table
+
+2025-09-01 18:09:59,919 - WARNING - Texto insuficiente en R-DR-2008-0057.html
+2025-09-01 18:09:59,934 - INFO - Procesando 6/13: http://bo.unsa.edu.ar/dr/R2008/R-DR-2008-0058.html
+2025-09-01 18:10:00,353 - INFO - Descargado: R-DR-2008-0058.html
+2025-09-01 18:10:00,387 - WARNING - Error extrayendo texto directo: EOF marker not found
+2025-09-01 18:10:00,388 - INFO - Usando OCR para extraer texto
+2025-09-01 18:10:00,433 - ERROR - Error en OCR: Unable to get page count.
+Syntax Warning: May not be a PDF file (continuing anyway)
+Syntax Error (2): Illegal character <21> in hex string
+Syntax Error (4): Illegal character <4f> in hex string
+Syntax Error (6): Illegal character <54> in hex string
+Syntax Error (7): Illegal character <59> in hex string
+Syntax Error (8): Illegal character <50> in hex string
+Syntax Error (11): Illegal character <48> in hex string
+Syntax Error (12): Illegal character <54> in hex string
+Syntax Error (13): Illegal character <4d> in hex string
+Syntax Error (14): Illegal character <4c> in hex string
+Syntax Error (16): Illegal character <50> in hex string
+Syntax Error (17): Illegal character <55> in hex string
+Syntax Error (19): Illegal character <4c> in hex string
+Syntax Error (20): Illegal character <49> in hex string
+Syntax Error (23): Illegal character <22> in hex string
+Syntax Error (24): Illegal character <2d> in hex string
+Syntax Error (25): Illegal character <2f> in hex string
+Syntax Error (26): Illegal character <2f> in hex string
+Syntax Error (27): Illegal character <57> in hex string
+Syntax Error (30): Illegal character <2f> in hex string
+Syntax Error (31): Illegal character <2f> in hex string
+Syntax Error (33): Illegal character <54> in hex string
+Syntax Error (36): Illegal character <48> in hex string
+Syntax Error (37): Illegal character <54> in hex string
+Syntax Error (38): Illegal character <4d> in hex string
+Syntax Error (39): Illegal character <4c> in hex string
+Syntax Error (42): Illegal character <2e> in hex string
+Syntax Error (45): Illegal character <54> in hex string
+Syntax Error (46): Illegal character <72> in hex string
+Syntax Error (48): Illegal character <6e> in hex string
+Syntax Error (49): Illegal character <73> in hex string
+Syntax Error (50): Illegal character <69> in hex string
+Syntax Error (51): Illegal character <74> in hex string
+Syntax Error (52): Illegal character <69> in hex string
+Syntax Error (53): Illegal character <6f> in hex string
+Syntax Error (54): Illegal character <6e> in hex string
+Syntax Error (56): Illegal character <6c> in hex string
+Syntax Error (57): Illegal character <2f> in hex string
+Syntax Error (58): Illegal character <2f> in hex string
+Syntax Error (60): Illegal character <4e> in hex string
+Syntax Error (61): Illegal character <22> in hex string
+Syntax Error (67): Illegal character <48> in hex string
+Syntax Error (68): Illegal character <54> in hex string
+Syntax Error (69): Illegal character <4d> in hex string
+Syntax Error (70): Illegal character <4c> in hex string
+Syntax Error (76): Illegal character <48> in hex string
+Syntax Error (86): Illegal character <4d> in hex string
+Syntax Error (88): Illegal character <54> in hex string
+Syntax Error (91): Illegal character <48> in hex string
+Syntax Error (92): Illegal character <54> in hex string
+Syntax Error (93): Illegal character <54> in hex string
+Syntax Error (94): Illegal character <50> in hex string
+Syntax Error (95): Illegal character <2d> in hex string
+Syntax Error (97): Illegal character <51> in hex string
+Syntax Error (98): Illegal character <55> in hex string
+Syntax Error (99): Illegal character <49> in hex string
+Syntax Error (100): Illegal character <56> in hex string
+Syntax Error (101): Illegal character <3d> in hex string
+Syntax Error (102): Illegal character <22> in hex string
+Syntax Error (104): Illegal character <4f> in hex string
+Syntax Error (105): Illegal character <4e> in hex string
+Syntax Error (106): Illegal character <54> in hex string
+Syntax Error (108): Illegal character <4e> in hex string
+Syntax Error (109): Illegal character <54> in hex string
+Syntax Error (110): Illegal character <2d> in hex string
+Syntax Error (111): Illegal character <54> in hex string
+Syntax Error (112): Illegal character <59> in hex string
+Syntax Error (113): Illegal character <50> in hex string
+Syntax Error (115): Illegal character <22> in hex string
+Syntax Error (118): Illegal character <4f> in hex string
+Syntax Error (119): Illegal character <4e> in hex string
+Syntax Error (120): Illegal character <54> in hex string
+Syntax Error (122): Illegal character <4e> in hex string
+Syntax Error (123): Illegal character <54> in hex string
+Syntax Error (124): Illegal character <3d> in hex string
+Syntax Error (125): Illegal character <22> in hex string
+Syntax Error (126): Illegal character <74> in hex string
+Syntax Error (128): Illegal character <78> in hex string
+Syntax Error (129): Illegal character <74> in hex string
+Syntax Error (130): Illegal character <2f> in hex string
+Syntax Error (131): Illegal character <68> in hex string
+Syntax Error (132): Illegal character <74> in hex string
+Syntax Error (133): Illegal character <6d> in hex string
+Syntax Error (134): Illegal character <6c> in hex string
+Syntax Error (135): Illegal character <3b> in hex string
+Syntax Error (138): Illegal character <68> in hex string
+Syntax Error (140): Illegal character <72> in hex string
+Syntax Error (141): Illegal character <73> in hex string
+Syntax Error (143): Illegal character <74> in hex string
+Syntax Error (144): Illegal character <3d> in hex string
+Syntax Error (145): Illegal character <77> in hex string
+Syntax Error (146): Illegal character <69> in hex string
+Syntax Error (147): Illegal character <6e> in hex string
+Syntax Error (149): Illegal character <6f> in hex string
+Syntax Error (150): Illegal character <77> in hex string
+Syntax Error (151): Illegal character <73> in hex string
+Syntax Error (152): Illegal character <2d> in hex string
+Syntax Error (157): Illegal character <22> in hex string
+Syntax Error (164): Illegal character <54> in hex string
+Syntax Error (165): Illegal character <49> in hex string
+Syntax Error (166): Illegal character <54> in hex string
+Syntax Error (167): Illegal character <4c> in hex string
+Syntax Error (171): Illegal character <2f> in hex string
+Syntax Error (172): Illegal character <54> in hex string
+Syntax Error (173): Illegal character <49> in hex string
+Syntax Error (174): Illegal character <54> in hex string
+Syntax Error (175): Illegal character <4c> in hex string
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't read xref table
+
+2025-09-01 18:10:00,436 - WARNING - Texto insuficiente en R-DR-2008-0058.html
+2025-09-01 18:10:00,450 - INFO - Procesando 7/13: http://bo.unsa.edu.ar/dr/R2008/R-DR-2008-0059.html
+2025-09-01 18:10:00,831 - INFO - Descargado: R-DR-2008-0059.html
+2025-09-01 18:10:00,866 - WARNING - Error extrayendo texto directo: EOF marker not found
+2025-09-01 18:10:00,867 - INFO - Usando OCR para extraer texto
+2025-09-01 18:10:00,910 - ERROR - Error en OCR: Unable to get page count.
+Syntax Warning: May not be a PDF file (continuing anyway)
+Syntax Error (2): Illegal character <21> in hex string
+Syntax Error (4): Illegal character <4f> in hex string
+Syntax Error (6): Illegal character <54> in hex string
+Syntax Error (7): Illegal character <59> in hex string
+Syntax Error (8): Illegal character <50> in hex string
+Syntax Error (11): Illegal character <48> in hex string
+Syntax Error (12): Illegal character <54> in hex string
+Syntax Error (13): Illegal character <4d> in hex string
+Syntax Error (14): Illegal character <4c> in hex string
+Syntax Error (16): Illegal character <50> in hex string
+Syntax Error (17): Illegal character <55> in hex string
+Syntax Error (19): Illegal character <4c> in hex string
+Syntax Error (20): Illegal character <49> in hex string
+Syntax Error (23): Illegal character <22> in hex string
+Syntax Error (24): Illegal character <2d> in hex string
+Syntax Error (25): Illegal character <2f> in hex string
+Syntax Error (26): Illegal character <2f> in hex string
+Syntax Error (27): Illegal character <57> in hex string
+Syntax Error (30): Illegal character <2f> in hex string
+Syntax Error (31): Illegal character <2f> in hex string
+Syntax Error (33): Illegal character <54> in hex string
+Syntax Error (36): Illegal character <48> in hex string
+Syntax Error (37): Illegal character <54> in hex string
+Syntax Error (38): Illegal character <4d> in hex string
+Syntax Error (39): Illegal character <4c> in hex string
+Syntax Error (42): Illegal character <2e> in hex string
+Syntax Error (45): Illegal character <54> in hex string
+Syntax Error (46): Illegal character <72> in hex string
+Syntax Error (48): Illegal character <6e> in hex string
+Syntax Error (49): Illegal character <73> in hex string
+Syntax Error (50): Illegal character <69> in hex string
+Syntax Error (51): Illegal character <74> in hex string
+Syntax Error (52): Illegal character <69> in hex string
+Syntax Error (53): Illegal character <6f> in hex string
+Syntax Error (54): Illegal character <6e> in hex string
+Syntax Error (56): Illegal character <6c> in hex string
+Syntax Error (57): Illegal character <2f> in hex string
+Syntax Error (58): Illegal character <2f> in hex string
+Syntax Error (60): Illegal character <4e> in hex string
+Syntax Error (61): Illegal character <22> in hex string
+Syntax Error (67): Illegal character <48> in hex string
+Syntax Error (68): Illegal character <54> in hex string
+Syntax Error (69): Illegal character <4d> in hex string
+Syntax Error (70): Illegal character <4c> in hex string
+Syntax Error (76): Illegal character <48> in hex string
+Syntax Error (86): Illegal character <4d> in hex string
+Syntax Error (88): Illegal character <54> in hex string
+Syntax Error (91): Illegal character <48> in hex string
+Syntax Error (92): Illegal character <54> in hex string
+Syntax Error (93): Illegal character <54> in hex string
+Syntax Error (94): Illegal character <50> in hex string
+Syntax Error (95): Illegal character <2d> in hex string
+Syntax Error (97): Illegal character <51> in hex string
+Syntax Error (98): Illegal character <55> in hex string
+Syntax Error (99): Illegal character <49> in hex string
+Syntax Error (100): Illegal character <56> in hex string
+Syntax Error (101): Illegal character <3d> in hex string
+Syntax Error (102): Illegal character <22> in hex string
+Syntax Error (104): Illegal character <4f> in hex string
+Syntax Error (105): Illegal character <4e> in hex string
+Syntax Error (106): Illegal character <54> in hex string
+Syntax Error (108): Illegal character <4e> in hex string
+Syntax Error (109): Illegal character <54> in hex string
+Syntax Error (110): Illegal character <2d> in hex string
+Syntax Error (111): Illegal character <54> in hex string
+Syntax Error (112): Illegal character <59> in hex string
+Syntax Error (113): Illegal character <50> in hex string
+Syntax Error (115): Illegal character <22> in hex string
+Syntax Error (118): Illegal character <4f> in hex string
+Syntax Error (119): Illegal character <4e> in hex string
+Syntax Error (120): Illegal character <54> in hex string
+Syntax Error (122): Illegal character <4e> in hex string
+Syntax Error (123): Illegal character <54> in hex string
+Syntax Error (124): Illegal character <3d> in hex string
+Syntax Error (125): Illegal character <22> in hex string
+Syntax Error (126): Illegal character <74> in hex string
+Syntax Error (128): Illegal character <78> in hex string
+Syntax Error (129): Illegal character <74> in hex string
+Syntax Error (130): Illegal character <2f> in hex string
+Syntax Error (131): Illegal character <68> in hex string
+Syntax Error (132): Illegal character <74> in hex string
+Syntax Error (133): Illegal character <6d> in hex string
+Syntax Error (134): Illegal character <6c> in hex string
+Syntax Error (135): Illegal character <3b> in hex string
+Syntax Error (138): Illegal character <68> in hex string
+Syntax Error (140): Illegal character <72> in hex string
+Syntax Error (141): Illegal character <73> in hex string
+Syntax Error (143): Illegal character <74> in hex string
+Syntax Error (144): Illegal character <3d> in hex string
+Syntax Error (145): Illegal character <77> in hex string
+Syntax Error (146): Illegal character <69> in hex string
+Syntax Error (147): Illegal character <6e> in hex string
+Syntax Error (149): Illegal character <6f> in hex string
+Syntax Error (150): Illegal character <77> in hex string
+Syntax Error (151): Illegal character <73> in hex string
+Syntax Error (152): Illegal character <2d> in hex string
+Syntax Error (157): Illegal character <22> in hex string
+Syntax Error (164): Illegal character <54> in hex string
+Syntax Error (165): Illegal character <49> in hex string
+Syntax Error (166): Illegal character <54> in hex string
+Syntax Error (167): Illegal character <4c> in hex string
+Syntax Error (171): Illegal character <2f> in hex string
+Syntax Error (172): Illegal character <54> in hex string
+Syntax Error (173): Illegal character <49> in hex string
+Syntax Error (174): Illegal character <54> in hex string
+Syntax Error (175): Illegal character <4c> in hex string
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't read xref table
+
+2025-09-01 18:10:00,913 - WARNING - Texto insuficiente en R-DR-2008-0059.html
+2025-09-01 18:10:00,930 - INFO - Procesando 8/13: http://bo.unsa.edu.ar/dr/R2008/R-DR-2008-0060.html
+2025-09-01 18:10:01,323 - INFO - Descargado: R-DR-2008-0060.html
+2025-09-01 18:10:01,354 - WARNING - Error extrayendo texto directo: EOF marker not found
+2025-09-01 18:10:01,354 - INFO - Usando OCR para extraer texto
+2025-09-01 18:10:01,397 - ERROR - Error en OCR: Unable to get page count.
+Syntax Warning: May not be a PDF file (continuing anyway)
+Syntax Error (2): Illegal character <21> in hex string
+Syntax Error (4): Illegal character <4f> in hex string
+Syntax Error (6): Illegal character <54> in hex string
+Syntax Error (7): Illegal character <59> in hex string
+Syntax Error (8): Illegal character <50> in hex string
+Syntax Error (11): Illegal character <48> in hex string
+Syntax Error (12): Illegal character <54> in hex string
+Syntax Error (13): Illegal character <4d> in hex string
+Syntax Error (14): Illegal character <4c> in hex string
+Syntax Error (16): Illegal character <50> in hex string
+Syntax Error (17): Illegal character <55> in hex string
+Syntax Error (19): Illegal character <4c> in hex string
+Syntax Error (20): Illegal character <49> in hex string
+Syntax Error (23): Illegal character <22> in hex string
+Syntax Error (24): Illegal character <2d> in hex string
+Syntax Error (25): Illegal character <2f> in hex string
+Syntax Error (26): Illegal character <2f> in hex string
+Syntax Error (27): Illegal character <57> in hex string
+Syntax Error (30): Illegal character <2f> in hex string
+Syntax Error (31): Illegal character <2f> in hex string
+Syntax Error (33): Illegal character <54> in hex string
+Syntax Error (36): Illegal character <48> in hex string
+Syntax Error (37): Illegal character <54> in hex string
+Syntax Error (38): Illegal character <4d> in hex string
+Syntax Error (39): Illegal character <4c> in hex string
+Syntax Error (42): Illegal character <2e> in hex string
+Syntax Error (45): Illegal character <54> in hex string
+Syntax Error (46): Illegal character <72> in hex string
+Syntax Error (48): Illegal character <6e> in hex string
+Syntax Error (49): Illegal character <73> in hex string
+Syntax Error (50): Illegal character <69> in hex string
+Syntax Error (51): Illegal character <74> in hex string
+Syntax Error (52): Illegal character <69> in hex string
+Syntax Error (53): Illegal character <6f> in hex string
+Syntax Error (54): Illegal character <6e> in hex string
+Syntax Error (56): Illegal character <6c> in hex string
+Syntax Error (57): Illegal character <2f> in hex string
+Syntax Error (58): Illegal character <2f> in hex string
+Syntax Error (60): Illegal character <4e> in hex string
+Syntax Error (61): Illegal character <22> in hex string
+Syntax Error (67): Illegal character <48> in hex string
+Syntax Error (68): Illegal character <54> in hex string
+Syntax Error (69): Illegal character <4d> in hex string
+Syntax Error (70): Illegal character <4c> in hex string
+Syntax Error (76): Illegal character <48> in hex string
+Syntax Error (86): Illegal character <4d> in hex string
+Syntax Error (88): Illegal character <54> in hex string
+Syntax Error (91): Illegal character <48> in hex string
+Syntax Error (92): Illegal character <54> in hex string
+Syntax Error (93): Illegal character <54> in hex string
+Syntax Error (94): Illegal character <50> in hex string
+Syntax Error (95): Illegal character <2d> in hex string
+Syntax Error (97): Illegal character <51> in hex string
+Syntax Error (98): Illegal character <55> in hex string
+Syntax Error (99): Illegal character <49> in hex string
+Syntax Error (100): Illegal character <56> in hex string
+Syntax Error (101): Illegal character <3d> in hex string
+Syntax Error (102): Illegal character <22> in hex string
+Syntax Error (104): Illegal character <4f> in hex string
+Syntax Error (105): Illegal character <4e> in hex string
+Syntax Error (106): Illegal character <54> in hex string
+Syntax Error (108): Illegal character <4e> in hex string
+Syntax Error (109): Illegal character <54> in hex string
+Syntax Error (110): Illegal character <2d> in hex string
+Syntax Error (111): Illegal character <54> in hex string
+Syntax Error (112): Illegal character <59> in hex string
+Syntax Error (113): Illegal character <50> in hex string
+Syntax Error (115): Illegal character <22> in hex string
+Syntax Error (118): Illegal character <4f> in hex string
+Syntax Error (119): Illegal character <4e> in hex string
+Syntax Error (120): Illegal character <54> in hex string
+Syntax Error (122): Illegal character <4e> in hex string
+Syntax Error (123): Illegal character <54> in hex string
+Syntax Error (124): Illegal character <3d> in hex string
+Syntax Error (125): Illegal character <22> in hex string
+Syntax Error (126): Illegal character <74> in hex string
+Syntax Error (128): Illegal character <78> in hex string
+Syntax Error (129): Illegal character <74> in hex string
+Syntax Error (130): Illegal character <2f> in hex string
+Syntax Error (131): Illegal character <68> in hex string
+Syntax Error (132): Illegal character <74> in hex string
+Syntax Error (133): Illegal character <6d> in hex string
+Syntax Error (134): Illegal character <6c> in hex string
+Syntax Error (135): Illegal character <3b> in hex string
+Syntax Error (138): Illegal character <68> in hex string
+Syntax Error (140): Illegal character <72> in hex string
+Syntax Error (141): Illegal character <73> in hex string
+Syntax Error (143): Illegal character <74> in hex string
+Syntax Error (144): Illegal character <3d> in hex string
+Syntax Error (145): Illegal character <77> in hex string
+Syntax Error (146): Illegal character <69> in hex string
+Syntax Error (147): Illegal character <6e> in hex string
+Syntax Error (149): Illegal character <6f> in hex string
+Syntax Error (150): Illegal character <77> in hex string
+Syntax Error (151): Illegal character <73> in hex string
+Syntax Error (152): Illegal character <2d> in hex string
+Syntax Error (157): Illegal character <22> in hex string
+Syntax Error (164): Illegal character <54> in hex string
+Syntax Error (165): Illegal character <49> in hex string
+Syntax Error (166): Illegal character <54> in hex string
+Syntax Error (167): Illegal character <4c> in hex string
+Syntax Error (171): Illegal character <2f> in hex string
+Syntax Error (172): Illegal character <54> in hex string
+Syntax Error (173): Illegal character <49> in hex string
+Syntax Error (174): Illegal character <54> in hex string
+Syntax Error (175): Illegal character <4c> in hex string
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't find trailer dictionary
+Syntax Error: Couldn't read xref table
+
+2025-09-01 18:10:01,400 - WARNING - Texto insuficiente en R-DR-2008-0060.html
+2025-09-01 18:10:01,417 - INFO - Procesando 9/13: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0832.pdf
+2025-09-01 18:10:02,383 - INFO - Descargado: R-DR-2009-0832.pdf
+2025-09-01 18:10:02,406 - INFO - Usando OCR para extraer texto
+2025-09-01 18:10:53,233 - INFO - Procesando 10/13: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0843.pdf
+2025-09-01 18:10:54,089 - INFO - Descargado: R-DR-2009-0843.pdf
+2025-09-01 18:10:54,109 - INFO - Usando OCR para extraer texto
+2025-09-01 18:11:20,281 - INFO - Pausa técnica... Procesados: 5, Errores: 5
+2025-09-01 18:11:20,282 - INFO - Procesando 11/13: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0908.pdf
+2025-09-01 18:11:21,233 - INFO - Descargado: R-DR-2009-0908.pdf
+2025-09-01 18:11:21,259 - INFO - Usando OCR para extraer texto
+2025-09-01 18:12:13,432 - INFO - Procesando 12/13: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0926.pdf
+2025-09-01 18:12:14,824 - INFO - Descargado: R-DR-2009-0926.pdf
+2025-09-01 18:12:14,849 - INFO - Usando OCR para extraer texto
+2025-09-01 18:13:04,458 - INFO - Procesando 13/13: http://bo.unsa.edu.ar/dr/R2025/R-DR-2025-0947.pdf
+2025-09-01 18:13:12,722 - INFO - Descargado: R-DR-2025-0947.pdf
+2025-09-01 18:13:17,763 - INFO - Proceso completado: 8 exitosos, 5 errores
+2025-09-01 18:13:17,764 - INFO - CSV generado: convenios_output\convenios.csv
+2025-09-01 18:19:43,556 - INFO - Procesando 8 URLs
+2025-09-01 18:19:43,557 - INFO - Procesando 1/8: http://bo.unsa.edu.ar/dr/R1973/R-DR-1973-0886.pdf
+2025-09-01 18:19:45,935 - INFO - Descargado: R-DR-1973-0886.pdf
+2025-09-01 18:19:45,966 - INFO - Usando OCR para extraer texto
+2025-09-01 18:20:04,528 - INFO - Procesando 2/8: http://bo.unsa.edu.ar/dr/R1973/R-DR-1973-0966.pdf
+2025-09-01 18:20:05,356 - INFO - Descargado: R-DR-1973-0966.pdf
+2025-09-01 18:20:05,383 - INFO - Usando OCR para extraer texto
+2025-09-01 18:20:25,634 - INFO - Procesando 3/8: http://bo.unsa.edu.ar/dr/R1974/R-DR-1974-0366.pdf
+2025-09-01 18:20:30,216 - INFO - Descargado: R-DR-1974-0366.pdf
+2025-09-01 18:20:30,245 - INFO - Usando OCR para extraer texto
+2025-09-01 18:21:09,482 - INFO - Procesando 4/8: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0832.pdf
+2025-09-01 18:21:10,517 - INFO - Descargado: R-DR-2009-0832.pdf
+2025-09-01 18:21:10,543 - INFO - Usando OCR para extraer texto
+2025-09-01 18:22:05,398 - INFO - Procesando 5/8: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0843.pdf
+2025-09-01 18:22:06,360 - INFO - Descargado: R-DR-2009-0843.pdf
+2025-09-01 18:22:06,389 - INFO - Usando OCR para extraer texto
+2025-09-01 18:22:34,732 - INFO - Procesando 6/8: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0908.pdf
+2025-09-01 18:22:36,250 - INFO - Descargado: R-DR-2009-0908.pdf
+2025-09-01 18:22:36,274 - INFO - Usando OCR para extraer texto
+2025-09-01 18:23:31,108 - INFO - Procesando 7/8: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0926.pdf
+2025-09-01 18:23:32,551 - INFO - Descargado: R-DR-2009-0926.pdf
+2025-09-01 18:23:32,594 - INFO - Usando OCR para extraer texto
+2025-09-01 18:24:24,668 - INFO - Procesando 8/8: http://bo.unsa.edu.ar/dr/R2025/R-DR-2025-0947.pdf
+2025-09-01 18:24:26,639 - INFO - Descargado: R-DR-2025-0947.pdf
+2025-09-01 18:24:31,853 - INFO - Proceso completado: 8 exitosos, 0 errores
+2025-09-01 18:24:31,854 - INFO - CSV generado: convenios_output\convenios.csv
+2025-09-01 19:14:56,984 - INFO - Procesando 8 URLs
+2025-09-01 19:14:56,985 - INFO - Procesando 1/8: http://bo.unsa.edu.ar/dr/R1973/R-DR-1973-0886.pdf
+2025-09-01 19:14:57,848 - INFO - Descargado: R-DR-1973-0886.pdf
+2025-09-01 19:14:57,874 - INFO - Usando OCR mejorado para extraer texto
+2025-09-01 19:15:30,731 - INFO - Procesando 2/8: http://bo.unsa.edu.ar/dr/R1973/R-DR-1973-0966.pdf
+2025-09-01 19:15:31,484 - INFO - Descargado: R-DR-1973-0966.pdf
+2025-09-01 19:15:31,501 - INFO - Usando OCR mejorado para extraer texto
+2025-09-01 19:16:06,193 - INFO - Procesando 3/8: http://bo.unsa.edu.ar/dr/R1974/R-DR-1974-0366.pdf
+2025-09-01 19:16:07,140 - INFO - Descargado: R-DR-1974-0366.pdf
+2025-09-01 19:16:07,185 - INFO - Usando OCR mejorado para extraer texto
+2025-09-01 19:17:10,610 - INFO - Procesando 4/8: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0832.pdf
+2025-09-01 19:17:11,633 - INFO - Descargado: R-DR-2009-0832.pdf
+2025-09-01 19:17:11,659 - INFO - Usando OCR mejorado para extraer texto
+2025-09-01 19:18:39,431 - INFO - Procesando 5/8: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0843.pdf
+2025-09-01 19:18:40,333 - INFO - Descargado: R-DR-2009-0843.pdf
+2025-09-01 19:18:40,353 - INFO - Usando OCR mejorado para extraer texto
+2025-09-01 19:19:27,119 - INFO - Procesando 6/8: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0908.pdf
+2025-09-01 19:19:28,359 - INFO - Descargado: R-DR-2009-0908.pdf
+2025-09-01 19:19:28,391 - INFO - Usando OCR mejorado para extraer texto
+2025-09-01 19:20:53,963 - INFO - Procesando 7/8: http://bo.unsa.edu.ar/dr/R2009/R-DR-2009-0926.pdf
+2025-09-01 19:20:54,970 - INFO - Descargado: R-DR-2009-0926.pdf
+2025-09-01 19:20:55,008 - INFO - Usando OCR mejorado para extraer texto
+2025-09-01 19:22:24,402 - INFO - Procesando 8/8: http://bo.unsa.edu.ar/dr/R2025/R-DR-2025-0947.pdf
+2025-09-01 19:22:26,398 - INFO - Descargado: R-DR-2025-0947.pdf
+2025-09-01 19:22:32,126 - INFO - Proceso completado: 8 procesados, 0 errores
